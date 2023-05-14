@@ -1,0 +1,22 @@
+//  FONTS
+
+@use 'sass:math';
+
+$BASE_FONT: 'Inter', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+  helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+
+/* FONT SIZE */
+$BASE_FONT_SIZE: 13px;
+
+@function rem($size) {
+  $remSize: math.div($size, 10px);
+  @return #{$remSize}rem;
+}
+
+.a {
+  color: red;
+}
+
+.b {
+  color: aqua;
+}
