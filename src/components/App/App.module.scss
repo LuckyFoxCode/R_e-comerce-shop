@@ -1,0 +1,10 @@
+@import 'main';
+
+.app {
+  width: 100%;
+  max-width: 1080px;
+  background-color: $WHITE;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+  margin: 0 auto;
+}

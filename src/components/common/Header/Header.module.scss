@@ -1,0 +1,61 @@
+@import 'main';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 45px;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &_image {
+      $size: 40px;
+      width: $size;
+      height: $size;
+      margin-right: 15px;
+    }
+
+    &_wrapper {
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        @include text(rem(20px), 700, $BLACK);
+        line-height: 1.2;
+      }
+
+      span {
+        @include text(rem(14px), 400, inherit);
+        line-height: 1.21;
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+
+    &_item {
+      margin-right: 15px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &_link {
+      display: flex;
+      align-items: center;
+      @include text(rem(12px), 600, #5c5c5c);
+      line-height: 1.21;
+
+      span {
+        margin-left: 5px;
+      }
+    }
+  }
+}
