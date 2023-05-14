@@ -1,0 +1,30 @@
+@import 'main';
+
+.shop {
+  padding: 0 15px 15px;
+  @include media($SCREEN_TABLET_SMALL) {
+    padding: 0 60px 60px;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    @include media($SCREEN_TABLET) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 35px;
+    }
+
+    &_title {
+      @include text(rem(32px), 700, $BLACK);
+      line-height: 1.21;
+      margin-bottom: 10px;
+      @include media($SCREEN_TABLET) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

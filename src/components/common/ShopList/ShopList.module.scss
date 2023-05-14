@@ -1,0 +1,20 @@
+@import 'main';
+
+.shopList {
+  display: grid;
+  grid-template-columns: repeat(1, 210px);
+  gap: 40px;
+  justify-content: center;
+
+  @include media($SCREEN_TABLET_SMALL) {
+    grid-template-columns: repeat(2, 210px);
+  }
+
+  @include media($SCREEN_TABLET) {
+    grid-template-columns: repeat(3, 210px);
+  }
+
+  @include media($SCREEN_DESKTOP) {
+    grid-template-columns: repeat(4, 210px);
+  }
+}
