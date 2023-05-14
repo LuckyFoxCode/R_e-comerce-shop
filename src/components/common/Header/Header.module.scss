@@ -2,16 +2,26 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 45px;
+  flex-direction: column;
+  padding: 15px;
   border-bottom: 1px solid #eaeaea;
-  margin-bottom: 45px;
+  margin-bottom: 20px;
+  @include media($SCREEN_TABLET_SMALL) {
+    padding: 45px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 45px;
+  }
 
   &__logo {
     display: flex;
     align-items: center;
+    margin-bottom: 15px;
     cursor: pointer;
+    @include media($SCREEN_TABLET_SMALL) {
+      margin-bottom: 0;
+    }
 
     &_image {
       $size: 40px;
@@ -25,13 +35,19 @@
       flex-direction: column;
 
       h1 {
-        @include text(rem(20px), 700, $BLACK);
+        @include text(rem(16px), 700, $BLACK);
         line-height: 1.2;
+        @include media($SCREEN_TABLET_SMALL) {
+          font-size: rem(20px);
+        }
       }
 
       span {
-        @include text(rem(14px), 400, inherit);
+        @include text(rem(12px), 400, inherit);
         line-height: 1.21;
+        @include media($SCREEN_TABLET_SMALL) {
+          font-size: rem(14px);
+        }
       }
     }
   }
@@ -39,6 +55,12 @@
   &__nav {
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    @include media($SCREEN_TABLET_SMALL) {
+      justify-content: flex-start;
+      width: fit-content;
+    }
 
     &_item {
       margin-right: 15px;
