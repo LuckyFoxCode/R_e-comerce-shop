@@ -3,6 +3,21 @@ import { Icon } from '../Icon/';
 import styles from './ShopListItem.module.scss';
 
 export const ShopListItem = ({ item }) => {
+  const sneakersImage = [
+    './src/images/sneakers_01.jpg',
+    './src/images/sneakers_02.jpg',
+    './src/images/sneakers_03.jpg',
+    './src/images/sneakers_04.jpg',
+    './src/images/sneakers_05.jpg',
+    './src/images/sneakers_06.jpg',
+    './src/images/sneakers_07.jpg',
+    './src/images/sneakers_08.jpg',
+    './src/images/sneakers_09.jpg',
+    './src/images/sneakers_01.jpg',
+    './src/images/sneakers_04.jpg',
+    './src/images/sneakers_10.jpg',
+  ];
+
   return (
     <li className={styles.card}>
       <div className={styles.card__like}>
@@ -14,7 +29,7 @@ export const ShopListItem = ({ item }) => {
         />
       </div>
       <img
-        src={item.image}
+        src={sneakersImage[item.id]}
         alt='Sneakers'
         className={styles.card__image}
       />
