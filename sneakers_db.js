@@ -71,14 +71,14 @@ export const sneakers = [
   },
   {
     id: '11',
-    image: './src/images/sneakers_04.jpg',
+    image: './images/sneakers_04.jpg',
     title: 'Кроссовки Puma X Aka Boku Future Rider',
     price: 89.99,
     isFavorited: false,
   },
   {
     id: '12',
-    image: './src/images/sneakers_10.jpg',
+    image: './images/sneakers_10.jpg',
     title: 'Мужские Кроссовки Nike Kyrie Flytrap IV',
     price: 89.99,
     isFavorited: false,
