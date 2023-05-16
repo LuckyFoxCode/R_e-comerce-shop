@@ -1,8 +1,8 @@
-import Image from '../../../images/sneakers_01.jpg';
+import PropTypes from 'prop-types';
 import { Icon } from '../Icon/';
 import styles from './ShopListItem.module.scss';
 
-export const ShopListItem = () => {
+export const ShopListItem = ({ item }) => {
   return (
     <li className={styles.card}>
       <div className={styles.card__like}>
@@ -14,15 +14,15 @@ export const ShopListItem = () => {
         />
       </div>
       <img
-        src={Image}
+        src={item.image}
         alt='Sneakers'
         className={styles.card__image}
       />
-      <h3 className={styles.card__title}>Мужские Кроссовки Nike Blazer Mid Suede</h3>
+      <h3 className={styles.card__title}>{item.title}</h3>
       <div className={styles.card__wrapper}>
         <div className={styles.card__wrapper_price}>
           <span>цена:</span>
-          <span>$ 89.99</span>
+          <span>$ {item.price}</span>
         </div>
         <div className={styles.card__wrapper_add}>
           <Icon
@@ -35,4 +35,8 @@ export const ShopListItem = () => {
       </div>
     </li>
   );
+};
+
+ShopListItem.propTypes = {
+  item: PropTypes.object,
 };
