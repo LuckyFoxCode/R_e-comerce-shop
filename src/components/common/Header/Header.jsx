@@ -23,9 +23,9 @@ export const Header = () => {
             href='#'>
             <Icon
               name='backet'
-              width={20}
-              height={20}
-              fill='#9B9B9B'
+              width={18}
+              height={18}
+              className={styles.icon}
             />
             <span>$ 0</span>
           </a>
@@ -36,9 +36,8 @@ export const Header = () => {
             href='#'>
             <Icon
               name='like'
-              width={20}
-              height={20}
-              fill='#9B9B9B'
+              width={18}
+              height={18}
               className={styles.icon}
             />
           </a>
@@ -49,9 +48,8 @@ export const Header = () => {
             href='#'>
             <Icon
               name='profile'
-              width={20}
-              height={20}
-              fill='#9B9B9B'
+              width={18}
+              height={18}
               className={styles.icon}
             />
           </a>

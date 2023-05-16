@@ -30,6 +30,14 @@
     &:hover {
       background-color: #fef0f0;
     }
+    &:hover .icon {
+      fill: #ff8585;
+    }
+
+    .icon {
+      fill: #ececec;
+      @include transition(fill);
+    }
   }
 
   &__image {
@@ -73,9 +81,16 @@
       border-radius: 7px;
       cursor: pointer;
       @include transition(background-color);
-
       &:hover {
         background-color: #89f09c;
+      }
+      &:hover .addIcon {
+        fill: $WHITE;
+      }
+
+      .addIcon {
+        fill: #d3d3d3;
+        @include transition(fill);
       }
     }
   }

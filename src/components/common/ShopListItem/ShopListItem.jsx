@@ -10,7 +10,6 @@ export const ShopListItem = () => {
           name='like'
           width={14}
           height={14}
-          fill='#ececec'
           className={styles.icon}
         />
       </div>
@@ -30,7 +29,7 @@ export const ShopListItem = () => {
             name='plus'
             width={14}
             height={14}
-            fill='#ececec'
+            className={styles.addIcon}
           />
         </div>
       </div>

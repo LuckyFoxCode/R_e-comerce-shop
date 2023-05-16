@@ -15,7 +15,6 @@ export const Input = ({ className }) => {
         name='search'
         width={16}
         height={16}
-        fill='#c4c4c4'
         className={styles.input__icon}
       />
     </div>

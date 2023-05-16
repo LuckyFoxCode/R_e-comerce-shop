@@ -75,6 +75,13 @@
       @include text(rem(12px), 600, #5c5c5c);
       line-height: 1.21;
 
+      .icon {
+        fill: #9b9b9b;
+        path {
+          stroke: #9b9b9b;
+        }
+      }
+
       span {
         margin-left: 5px;
       }
