@@ -4,18 +4,18 @@ import styles from './ShopListItem.module.scss';
 
 export const ShopListItem = ({ item }) => {
   const sneakersImage = [
-    '/images/sneakers_01.jpg',
-    '/images/sneakers_02.jpg',
-    '/images/sneakers_03.jpg',
-    '/images/sneakers_04.jpg',
-    '/images/sneakers_05.jpg',
-    '/images/sneakers_06.jpg',
-    '/images/sneakers_07.jpg',
-    '/images/sneakers_08.jpg',
-    '/images/sneakers_09.jpg',
-    '/images/sneakers_01.jpg',
-    '/images/sneakers_04.jpg',
-    '/images/sneakers_10.jpg',
+    './public/sneakers_01.jpg',
+    './public/sneakers_02.jpg',
+    './public/sneakers_03.jpg',
+    './public/sneakers_04.jpg',
+    './public/sneakers_05.jpg',
+    './public/sneakers_06.jpg',
+    './public/sneakers_07.jpg',
+    './public/sneakers_08.jpg',
+    './public/sneakers_09.jpg',
+    './public/sneakers_01.jpg',
+    './public/sneakers_04.jpg',
+    './public/sneakers_10.jpg',
   ];
 
   return (
